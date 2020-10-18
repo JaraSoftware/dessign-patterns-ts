@@ -1,0 +1,24 @@
+{
+  "name": "dessign-patterns-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "creacional:factory-method": "ts-node ./creacionales/factory-method/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcanadilla/dessign-patterns-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcanadilla/dessign-patterns-ts/issues"
+  },
+  "homepage": "https://github.com/jcanadilla/dessign-patterns-ts#readme",
+  "devDependencies": {
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  }
+}
