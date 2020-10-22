@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "creacional:factory-method": "ts-node ./creacionales/factory-method/index.ts"
+    "creacional:factory-method": "ts-node ./creacionales/factory-method/index.ts",
+    "comportamiento:interpreter": "ts-node ./comportamiento/interpreter/index.ts"
   },
   "repository": {
     "type": "git",
