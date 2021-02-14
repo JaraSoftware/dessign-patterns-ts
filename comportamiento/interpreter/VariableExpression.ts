@@ -3,18 +3,18 @@ import { Expression } from './Expression';
 
 export class VariableExpression implements Expression {
 
-  variable: String;
+  variable: string;
 
-  constructor(variable: String) {
+  constructor(variable: string) {
     this.variable = variable;
   }
 
   /**
    * @override
    */
-  interpreta(ctx: Map<String, Boolean>): Boolean {
+  interpreta(ctx: Map<string, boolean>): boolean {
     let value = ctx.get(this.variable);
-    if(value === undefined) value = false;
+    if (value === undefined) value = false;
     return value;
   }
 

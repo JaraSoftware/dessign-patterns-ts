@@ -1,4 +1,4 @@
 
 export interface Expression {
-  interpreta(ctx: Map<String, Boolean>): Boolean;
+  interpreta(ctx: Map<string, boolean>): boolean;
 }

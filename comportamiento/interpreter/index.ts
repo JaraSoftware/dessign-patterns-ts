@@ -8,7 +8,7 @@ import { VariableExpression } from './VariableExpression';
 function main() {
 
   // A AND true => true && true = true
-  let ctx = new Map<String, Boolean>();
+  let ctx = new Map<string, boolean>();
   ctx.set('A', true);
 
   let expr: Expression = new AndExpression(new VariableExpression('A'), new LiteralExpression(true));
@@ -35,7 +35,7 @@ function main() {
   expr = new OrExpression(new AndExpression(new VariableExpression('A'), new VariableExpression('B')), new VariableExpression('C'));
   result = expr.interpreta(ctx);
   console.log(`(A AND B) OR C: ${result}`);
-} 
+}
 
 
 main();
