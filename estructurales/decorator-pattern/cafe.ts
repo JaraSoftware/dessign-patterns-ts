@@ -1,16 +1,16 @@
 interface Cafe {
-    getDescripcion(): String;
+    getDescripcion(): string;
     getPrecio(): number;
 }
 
 class CafeCorto implements Cafe {
 
-    public getDescripcion(): String {
+    public getDescripcion(): string {
         return "Café corto";
     }
 
     public getPrecio(): number {
-        return  0.40;
+        return 0.40;
     }
 
 }
@@ -24,7 +24,7 @@ class ConLeche implements Cafe {
         this.cafe = cafe;
     }
 
-    getDescripcion(): String {
+    getDescripcion(): string {
         return `${this.cafe.getDescripcion()} con leche`;
     }
 

@@ -1,14 +1,14 @@
 export class Persona {
-  private nombre: String;
+  private nombre: string;
   private edad: Number;
-  private municipio: String;
-  private lugarTrabajo: String;
-  private colegio: String;
+  private municipio: string;
+  private lugarTrabajo: string;
+  private colegio: string;
 
   static Builder = class Builder {
     private persona: Persona;
 
-    constructor(nombre: String) {
+    constructor(nombre: string) {
       this.persona = new Persona();
       this.persona.nombre = nombre;
     }
@@ -29,7 +29,7 @@ export class Persona {
       return new Persona.BuilderMenor(this.persona);
     }
 
-    setMunicipio(municipio: String): Builder {
+    setMunicipio(municipio: string): Builder {
       this.persona.municipio = municipio;
       return this;
     }
@@ -42,7 +42,7 @@ export class Persona {
       this.persona = persona;
     }
 
-    setLugarTrabajo(trabajo: String): BuilderMayor {
+    setLugarTrabajo(trabajo: string): BuilderMayor {
       this.persona.lugarTrabajo = trabajo;
       this.persona.colegio = null;
       return this;
@@ -60,7 +60,7 @@ export class Persona {
       this.persona = persona;
     }
 
-    setColegio(colegio: String): BuilderMenor {
+    setColegio(colegio: string): BuilderMenor {
       this.persona.colegio = colegio;
       this.persona.lugarTrabajo = null;
       return this;
